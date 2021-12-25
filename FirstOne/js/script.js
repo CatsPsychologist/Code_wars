@@ -8,4 +8,6 @@ function shortName(str){
 }
 
 let a = 'Golovach Lena';
+
+console.log(a)
 console.log(shortName(a));
