@@ -4,6 +4,11 @@ const oddOrEven = array => {
     }
     let result = array.reduce((a,b) => a + b)
 
+    if(result % 2){
+        return 'odd'
+    }else{
+        return 'even'
+    }
 
 }
 
