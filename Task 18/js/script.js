@@ -1,6 +1,6 @@
 function disemvowel(str) {
 
-    let newStr = str.replace(/[aeiou]+/g, '')
+    let newStr = str.replace(/[aeiouAE]+/g, '')
    return newStr
 }
 
