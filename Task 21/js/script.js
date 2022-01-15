@@ -1,10 +1,11 @@
-const createPhoneNumber = numbers =>{
+const createPhoneNumber = numbers => {
     if(numbers.length !== 10){
         return 'Please, make sure you put exactly 10 numbers'
     }
-    let updArray = [numbers.join('')];
-    // updArray.splice(1, 0, '(')
-    return a
+    numbers.unshift("(");
+    numbers.splice(4, 0, ")", " ");
+    numbers.splice(9, 0, "-");
+    return numbers.join("");
 }
 
 console.log(createPhoneNumber([1]));
