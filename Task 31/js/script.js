@@ -2,7 +2,8 @@ function towerBuilder(nFloors) {
     let arr = [];
 
     towerBuilder(arr){
-        arr.push('*')
+
+        arr.push('*');
     }
 
 
