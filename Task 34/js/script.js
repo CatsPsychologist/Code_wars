@@ -1,6 +1,6 @@
 
 const strToNum = str =>{
-    
+
     return Number(str)
 }
 
