@@ -64,6 +64,22 @@
 
 
 
+const capitals = str =>{
+
+    let updArr = [];
+     str.split('')
+        .map((value, index) => {
+            if(value === value.toUpperCase()){
+                updArr.push(index)
+            }
+        })
+
+    return updArr;
+}
+
+console.log(capitals('CodEWars'))
+console.log(capitals('justForTest'))
+
 
 
 
