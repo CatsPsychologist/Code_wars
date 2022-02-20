@@ -63,24 +63,50 @@
 // console.log(minMax([4,3,2,5,1]));
 
 
+//
+// const capitals = str =>{
+//
+//     let updArr = [];
+//      str.split('')
+//         .map((value, index) => {
+//             if(value === value.toUpperCase()){
+//                 updArr.push(index)
+//             }
+//         })
+//
+//     return updArr;
+// }
+//
+// console.log(capitals('CodEWars'))
+// console.log(capitals('justForTest'))
 
-const capitals = str =>{
 
+// const unique = arr => {
+//
+//     let updArr = []
+//     arr.map(value => {
+//         updArr.push(...value)
+//     })
+//
+//     return  Array.from(new Set(updArr));
+//
+// }
+
+// console.log(unique([[1,2,3], [4,1,5], [6,7,8,5]]));
+
+
+const unique = (...str) =>{
+
+    let arr = [...str];
     let updArr = [];
-     str.split('')
-        .map((value, index) => {
-            if(value === value.toUpperCase()){
-                updArr.push(index)
-            }
-        })
+    arr.map(value => updArr.push(...value) )
 
-    return updArr;
+    return Array.from(new Set(updArr))
 }
 
-console.log(capitals('CodEWars'))
-console.log(capitals('justForTest'))
-
-
+console.log(1)
+console.log(unique([1,2,3],[4,1,5],[6,7,8,5]))
+// console.log(unique())
 
 
 
