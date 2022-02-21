@@ -108,23 +108,48 @@
 // console.log(unique([1,2,3],[4,1,5],[6,7,8,5]))
 // console.log(unique())
 
-const phone = num =>{
+// const phone = num =>{
+//
+//     let str = num.toString()
+//     if(str.length !== 9) return 'You have missed something';
+//
+//     let updArr = str.split('')
+//      updArr.splice(0,0, '(');
+//      updArr.splice(4,0, ') ');
+//      updArr.splice(8,0, '-')
+//
+//     return updArr.join('')
+//
+// }
+//
+// console.log(phone(123456789));
+// console.log(phone(631294125));
+// console.log(phone(214219412842))
 
-    let str = num.toString()
-    if(str.length !== 9) return 'You have missed something';
+// const findVowel = str => {
+//     let counter = 0
+//     const vow = ['e', 'y', 'u', 'i', 'o', 'a']
+//     // let arr = str.split('')
+//     for (let letter of vow) {
+//         if (str.includes(letter)) {
+//             counter++;
+//         }
+//     }
+//     return counter;
+// }
+//
+// console.log(findVowel('hello'));
+// console.log(findVowel('hello world'));
+// console.log(findVowel('wow you look so sexy girl'));
 
-    let updArr = str.split('')
-     updArr.splice(0,0, '(');
-     updArr.splice(4,0, ') ');
-     updArr.splice(8,0, '-')
 
-    return updArr.join('')
 
-}
 
-console.log(phone(123456789));
-console.log(phone(631294125));
-console.log(phone(214219412842))
+
+
+
+
+
 
 
 
