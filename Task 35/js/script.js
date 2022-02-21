@@ -95,18 +95,36 @@
 // console.log(unique([[1,2,3], [4,1,5], [6,7,8,5]]));
 
 
-const unique = (...str) =>{
+// const unique = (...str) =>{
+//
+//     let arr = [...str];
+//     let updArr = [];
+//     arr.map(value => updArr.push(...value) )
+//
+//     return Array.from(new Set(updArr))
+// }
+//
+// console.log(1)
+// console.log(unique([1,2,3],[4,1,5],[6,7,8,5]))
+// console.log(unique())
 
-    let arr = [...str];
-    let updArr = [];
-    arr.map(value => updArr.push(...value) )
+const phone = num =>{
 
-    return Array.from(new Set(updArr))
+    let str = num.toString()
+    if(str.length !== 9) return 'You have missed something';
+
+    let updArr = str.split('')
+     updArr.splice(0,0, '(');
+     updArr.splice(4,0, ') ');
+     updArr.splice(8,0, '-')
+
+    return updArr.join('')
+
 }
 
-console.log(1)
-console.log(unique([1,2,3],[4,1,5],[6,7,8,5]))
-// console.log(unique())
+console.log(phone(123456789));
+console.log(phone(631294125));
+console.log(phone(214219412842))
 
 
 
