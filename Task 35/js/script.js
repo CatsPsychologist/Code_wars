@@ -142,6 +142,26 @@
 // console.log(findVowel('hello world'));
 // console.log(findVowel('wow you look so sexy girl'));
 
+const capital = str =>{
+    let updArr = []
+    str.split(' ')
+        .map(value => {
+            updArr.push(value[0].toUpperCase() + value.split('').shift())
+        })
+
+    return updArr
+}
+
+console.log(capital('hello my dear friend nice to meet you'))
+
+
+
+
+
+
+
+
+
 
 
 
