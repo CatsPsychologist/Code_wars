@@ -146,9 +146,8 @@ const capital = str =>{
     let updArr = []
     str.split(' ')
         .map(value => {
-            updArr.push(value[0].toUpperCase() + value.split('').shift())
+            updArr.push(value[0].toUpperCase() + value.split('').splice(1, value.length).join(''))
         })
-
     return updArr
 }
 
