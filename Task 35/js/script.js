@@ -148,8 +148,9 @@ const capital = str =>{
         .map(value => {
             updArr.push(value[0].toUpperCase() + value.split('').splice(1, value.length).join(''))
         })
-    return updArr
+    return updArr.join(' ')
 }
+
 
 console.log(capital('hello my dear friend nice to meet you'))
 
