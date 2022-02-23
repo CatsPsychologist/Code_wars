@@ -28,7 +28,7 @@
 // }
 
 function century(year) {
-    
+
     return Math.ceil(year/100);
 }
 
@@ -42,3 +42,5 @@ console.log(century(523));
 console.log(century(500))
 //
 // console.log(1)
+
+// ой да пошло оно все нахуй
